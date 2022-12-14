@@ -2,7 +2,7 @@ const express = require('express');
 const server = express ();
 const paginas = require ('./src/data/paginas.json');
 
-server.get('/paginas', (req,res) => {
+server.get('/', (req,res) => {
     return res.json(paginas)
 })
 server.listen(3000, () => {
